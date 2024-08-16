@@ -112,13 +112,13 @@
 
 
 
-@media (max-width: 750px) {
+@media (max-width: 551px) and (max-width: 750px) {
     .series-grid {
         grid-template-columns: 1fr 1fr;
     } 
 } 
 
-@media(max-width: 751px) and (max-width: 999) {
+@media(max-width: 751px) and (max-width: 999px) {
     .series-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }

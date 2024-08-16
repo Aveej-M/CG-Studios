@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+body {
+    display: block;
+    color: aliceblue;
+    margin: 0;
+    background-color: black;
+    font-family: "Raleway";
+    padding-top: 60px;
+   /* padding-left: 50px;
+    padding-right: 50px; */
+    padding-top: 90px;
+    min-width: 450px;
+}
+
+
+.avatar-body {
+    padding: 0 300px 50px 250px;
+    
+    
+}
+
+.avatar-thumbnail {
+    padding-right: 40px;
+}
+
+
+p {
+    font-family: "Raleway";
+    color: white;
+}
+
+p1 {
+    font-family: "Raleway";
+    font-weight: bold;
+    font-size: large;
+    color: brown;
+    margin-top: 10px;
+
+}
+
+p2,p3 {
+    font-family: "Raleway";
+    font-weight: bold;
+    color:rgb(169, 165, 178)
+    
+}
+
+a {
+    text-decoration: none;
+}
+/*button {
+    color: black;
+    height: 30px;
+    margin-bottom: 10px;
+    font-family: "Raleway";
+    font-weight: bold;
+    color: rgb(31,81,255);
+    border: none;
+    background-color: black;
+    border-radius: 50px;
+    cursor: pointer;
+}*/
+    .buttonDownload {
+        display: inline-block;
+        position: relative;
+        padding: 10px 25px;
+        background-color: #13c7be;
+        color: rgb(255, 255, 255);
+        font-family: sans-serif;
+        text-decoration: none;
+        font-size: 0.9em;
+        text-align: center;
+        text-indent: 15px;
+        border: none;
+        cursor: pointer;
+       }
+       
+       .buttonDownload:hover {
+        background-color: #a2601a;
+        color: white;
+       }
+       
+       .buttonDownload:before, .buttonDownload:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 52%;
+       }
+       
+       .buttonDownload:before {
+        width: 10px;
+        height: 2px;
+        border-style: solid;
+        border-width: 0 2px 2px;
+       }
+       
+       .buttonDownload:after {
+        width: 0;
+        height: 0;
+        margin-left: 3px;
+        margin-top: -7px;
+        border-style: solid;
+        border-width: 4px 4px 0 4px;
+        border-color: transparent;
+        border-top-color: inherit;
+        animation: downloadArrow 1s linear infinite;
+        animation-play-state: paused;
+       }
+       
+       .buttonDownload:hover:before {
+        border-color: #cdefbd;
+       }
+       
+       .buttonDownload:hover:after {
+        border-top-color: #cdefbd;
+        animation-play-state: running;
+       }
+       
+       @keyframes downloadArrow {
+        0% {
+         margin-top: -7px;
+         opacity: 1;
+        }
+       
+        0.001% {
+         margin-top: -15px;
+         opacity: 0.4;
+        }
+       
+        50% {
+         opacity: 1;
+        }
+       
+        100% {
+         margin-top: 0;
+         opacity: 0.4;
+        }
+    }
+
+
+@media (max-width: 750px) {
+    .avatar-body {
+        padding: 0 50px 50px 50px;
+    }
+}
+
+@media (max-width: 751px) and (max-width: 999px) {
+    .avatar-body {
+        padding: 0 70px 50px 70px;
+    }
+}
+
+@media (max-width: 550px) {
+    .avatar-body {
+        padding: 0 20px 50px 50px ;
+    }
+  }
+    
+
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    color: black;
+}
